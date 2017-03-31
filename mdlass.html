@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap_assignment</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header" style="width: 85%; background-color: rgb(101, 101, 101);">
+	    	<div class="mdl-layout__header-row">
+	      		<span class="mdl-layout-title">PERSONAL INFORMATION</span>
+	    	</div>
+	    </header>
+	</div>
+	<br>
+	<br>
+	<hr>
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="Firstname" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="Firstname">First Name</label>
+		    			<span class="mdl-textfield__error">Input is not a name!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="Middlename" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="Middlename">Middle Name</label>
+		    			<span class="mdl-textfield__error">Input is not a name!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="Lastname" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="Lastname">Last Name</label>
+		    			<span class="mdl-textfield__error">Input is not a name!</span>
+		  			</div>
+				</form>					
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-xs-12">
+				<label for="dob">Date Of Birth</label>
+				<input type="Date" value="Date">
+	    	</div>
+		</div>		
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<form action="#">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="phone">
+					    <label class="mdl-textfield__label" for="phone">Contact Number</label>
+					    <span class="mdl-textfield__error">Input is not a number!</span>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+		    			<label class="mdl-textfield__label" for="email">Email-id</label>
+		    			<span class="mdl-textfield__error">Incorrect Email-id Format!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+					<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1">
+					<span class="mdl-radio__label">Married</span>
+				</label>
+				<br>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+					<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+					<span class="mdl-radio__label">Single</span>
+				</label>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="bg" pattern="[A|B|AB|O][\+|\-]">
+		    			<label class="mdl-textfield__label" for="bg">Blood Group</label>
+		    			<span class="mdl-textfield__error">Incorrect Input!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-4">
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+					<input type="radio" id="option-3" class="mdl-radio__button" name="optionss" value="3">
+					<span class="mdl-radio__label">Male</span>
+				</label>
+				<br>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+					<input type="radio" id="option-4" class="mdl-radio__button" name="optionss" value="4">
+					<span class="mdl-radio__label">Female</span>
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="Fathername" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="Fathername">Father's Name</label>
+		    			<span class="mdl-textfield__error">Input is not a name!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="Mothername" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="Mothername">Mother's Name</label>
+		    			<span class="mdl-textfield__error">Input is not a name!</span>
+		  			</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-xs-12">
+				<form action="#">
+					<div class="mdl-textfield mdl-js-textfield">
+					    <textarea class="mdl-textfield__input" type="text" rows= "2" id="address" ></textarea>
+					    <label class="mdl-textfield__label" for="address">Full Address:</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-6">				
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="city" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="city">City</label>
+		    			<span class="mdl-textfield__error">Incorrect Input!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="district" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="district">District</label>
+		    			<span class="mdl-textfield__error">Incorrect Input!</span>
+		  			</div>
+				</form>				
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="state" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="state">State</label>
+		    			<span class="mdl-textfield__error">Incorrect Input!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+						<label for="Country">Country:</label><br>
+						<select>
+							<option value="select">Select Country</option>
+							<option value="ind">India</option>
+							<option value="pak">Pakistan</option>
+							<option value="us">United States of America</option>
+							<option value="uk">United Kingdom</option>
+							<option value="can">Canada</option>
+							<option value="sl">Sri Lanka</option>
+						</select>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="occ" pattern="^[a-zA-Z\s]+$">
+		    			<label class="mdl-textfield__label" for="occ">Occupation</label>
+		    			<span class="mdl-textfield__error">Incorrect Input!</span>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="adh">
+		    			<label class="mdl-textfield__label" for="adh">Adhaar Card Number</label>
+		  			</div>
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<form action="#">
+		 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    			<input class="mdl-textfield__input" type="text" id="pan">
+		    			<label class="mdl-textfield__label" for="pan">Pan Card Number</label>
+		  			</div>
+				</form>
+			</div>
+		</div>
+   		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background-color: rgb(101, 101, 101);">
+  			SUBMIT
+		</button>
+</div>
+</body>
+</html>
